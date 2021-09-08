@@ -639,7 +639,7 @@ class AppButton {
                                             accessible_role: Atk.Role.MENU_ITEM});
         //remove l/r padding in grid view to allow maximum space for label
         if (!isListView) {
-            this.actor.set_style('padding-left: 0px; padding-right: 0px;');
+            this.actor.set_style('padding-left: 0px; padding-right: 0px; padding-top: 64px; padding-bottom: 64px;');
             this.setGridButtonWidth();
         }
         if (this.icon && this.appThis.getAppIconSize() > 0) {
